@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wen.asyl.selectphotodemo.SelectPhotoActivity">
+<RelativeLayout
+    android:id="@+id/rl_back"
+    android:layout_width="match_parent"
+    android:background="#e4d3d3"
+    android:layout_height="50dp">
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@mipmap/backed"/>
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:text="选择"/>
+</RelativeLayout>
+  <GridView
+      android:layout_below="@+id/rl_back"
+      android:id="@+id/id_gridView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:numColumns="3"
+      android:stretchMode="columnWidth"
+      android:cacheColorHint="@android:color/transparent"
+      android:listSelector="@android:color/transparent"
+      android:horizontalSpacing="3dp"
+      android:verticalSpacing="3dp"
+      ></GridView>
+    <RelativeLayout
+        android:id="@+id/rl_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ee000000"
+        android:clipChildren="true"
+        >
+        <TextView
+            android:id="@+id/tv_dir_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical ="true"
+            android:paddingLeft="10dp"
+            android:text="所有图片"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+        <TextView
+            android:id="@+id/tv_dir_count"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+    </RelativeLayout>
+
+</RelativeLayout>

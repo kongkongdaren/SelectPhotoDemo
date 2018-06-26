@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    >
+
+  <ImageView
+      android:id="@+id/iv_dir_image"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:layout_alignParentLeft="true"
+      android:background="@mipmap/default_error"
+      android:paddingLeft="12dp"
+      android:paddingBottom="17dp"
+      android:paddingRight="12dp"
+      android:paddingTop="9dp"
+      android:layout_centerVertical="true"
+      android:scaleType="fitXY"
+      android:src="@mipmap/ic_launcher"
+      />
+
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+         android:layout_marginLeft="10dp"
+         android:layout_toRightOf="@+id/iv_dir_image"
+         android:orientation="vertical"
+         android:text="1111"
+         >
+       <TextView
+           android:id="@+id/tv_dir_item_name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="12sp"/>
+
+       <TextView
+           android:id="@+id/tv_dir_item_count"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:textSize="10sp"/>
+
+     </LinearLayout>
+  <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:layout_marginRight="20dp"
+      android:src="@mipmap/default_check"/>
+</RelativeLayout>
